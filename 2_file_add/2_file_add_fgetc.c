@@ -23,16 +23,16 @@ int main(int argc, char *argv[])
 
     fp=fopen(argv[1], "a"); //Open or create file for appending to the end of file
 
-    if (!fp) { //If file is failed to open/create
+    if (!fp) {		 //If file is failed to open/create
         fprintf(stderr, "Error while opening file '%s' (error: %d)\n", argv[1], errno);
         return errno;
     }
 
-        printf("File %s is opened\n", argv[1]); //If file is opened/created succesfully
+    printf("File %s is opened\n", argv[1]); //If file is opened/created succesfully
 
     while(ch != EOF) {
         ch = (char)fgetc(stdin); //explicit cast int to char
-        if ( ch == EOF ) {
+        if (ch == EOF ) {
             if (errno) {  //If EOF is read and if it is an error
                 fprintf(stderr, "Error while reading data from stdin (error: %d)\n", errno);
             }

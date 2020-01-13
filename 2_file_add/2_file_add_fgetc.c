@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     FILE *fp;
     char ch = 0;
 
-    if (argc != 2)      //If wrong argument is given (no file or more than  
+    if (argc != 2)  {    //If wrong argument is given (no file or more than  
         usage(argv[0]); //one file is specified), usage of a program is displayed
         return 1;
     }

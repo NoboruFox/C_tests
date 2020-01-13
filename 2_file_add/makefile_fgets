@@ -1,0 +1,10 @@
+TARGET=file_add_fgets
+
+SRC = 2_file_add_fgets.c
+
+all:
+	gcc ${SRC} -o ${TARGET}
+
+clean:
+	rm ${TARGET}
+

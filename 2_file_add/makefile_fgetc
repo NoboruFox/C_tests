@@ -1,9 +1,8 @@
 TARGET = file_add_fgetc                                                         
                                                                                 
 SRC = 2_file_add_fgetc.c                                                        
-                                                                                
 all:                                                                            
 	gcc ${SRC} -o ${TARGET}                                                 
-                                                                                
-clean:                                                                          
-	rm ${TARGET}  
+	./test_script_fgetc ${TARGET} 
+clean:	
+	rm ${TARGET}

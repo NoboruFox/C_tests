@@ -4,7 +4,7 @@ SRC = 2_file_add_fgets.c
 
 all:
 	gcc ${SRC} -o ${TARGET}
-
+	./test_script_fgets ${TARGET}
 clean:
 	rm ${TARGET}
 

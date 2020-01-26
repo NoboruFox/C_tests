@@ -1,5 +1,10 @@
 
-FILENAME='file_add_fgets'
+FILENAME=$1
+
+if [ -z "$FILENAME" ]; then
+       echo "You must specify filename"
+       exit 1
+fi
 
 # Create a ro file and try to launch program with it
 touch written_file.txt

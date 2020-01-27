@@ -1,4 +1,3 @@
-
 FILENAME=$1
 
 if [ -z "$FILENAME" ]; then

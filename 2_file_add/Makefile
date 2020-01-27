@@ -22,4 +22,3 @@ test_fgets: ${TARGET_FGETS}
 
 clean:
 	rm -rf ${TARGET_FGETS} ${TARGET_FGETC}
-
